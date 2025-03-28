@@ -33,6 +33,7 @@
 #[cfg_attr(target_arch = "powerpc", path = "powerpc.rs")]
 #[cfg_attr(target_arch = "powerpc64", path = "powerpc64.rs")]
 #[cfg_attr(target_arch = "riscv64", path = "riscv64.rs")]
+#[cfg_attr(target_arch = "riscv32", path = "riscv32.rs")]
 #[cfg_attr(target_arch = "s390x", path = "s390x.rs")]
 #[cfg_attr(target_arch = "x86", path = "x86.rs")]
 #[cfg_attr(target_arch = "x86_64", path = "x86_64.rs")]
@@ -50,6 +51,7 @@ pub(in crate::backend) mod asm;
     target_arch = "powerpc",
     target_arch = "powerpc64",
     target_arch = "riscv64",
+    target_arch = "riscv32",
     target_arch = "s390x",
     target_arch = "x86_64",
 ))]
