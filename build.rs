@@ -67,11 +67,11 @@ fn main() {
     // Features needed only in no-std configurations.
     #[cfg(not(feature = "std"))]
     {
-        use_feature_or_nothing("core_c_str");
-        use_feature_or_nothing("core_ffi_c");
-        use_feature_or_nothing("alloc_c_string");
-        use_feature_or_nothing("alloc_ffi");
-        use_feature_or_nothing("error_in_core");
+        use_feature("core_c_str");
+        use_feature("core_ffi_c");
+        use_feature("alloc_c_string");
+        use_feature("alloc_ffi");
+        use_feature("error_in_core");
     }
 
     // Feature needed for testing.

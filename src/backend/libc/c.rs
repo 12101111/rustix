@@ -124,7 +124,7 @@ pub(crate) const CIBAUD: u32 = CBAUD << IBSHIFT;
 pub(super) use _Vx_ticks64_t as _Vx_ticks_t;
 #[cfg(linux_kernel)]
 pub(super) use fallocate64 as fallocate;
-#[cfg(not(any(target_arch = "aarch64", target_arch = "riscv64")))]
+#[cfg(not(any(target_arch = "aarch64", target_arch = "riscv64", target_arch = "riscv32")))]
 #[cfg(any(linux_like, target_os = "aix"))]
 pub(super) use open64 as open;
 #[cfg(any(
